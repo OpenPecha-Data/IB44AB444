@@ -1,0 +1,9 @@
+id: 04d29de5cdb74ba1ac37d3c13f030020
+annotation_type: index
+revision: '00001'
+annotations:
+  ffd0c9b2138c420da954dcaf32e85671:
+    base: fDD6E.txt
+    span:
+      start: 0
+      end: 33

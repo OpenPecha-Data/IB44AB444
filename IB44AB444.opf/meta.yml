@@ -1,0 +1,23 @@
+id: IB44AB444
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T19:07:45.242345'
+last_modified: '2022-05-27T19:07:45.242358'
+parser: null
+source_metadata:
+  title: 'MSV 7,00: Conclusion'
+  language: bo
+  base:
+    fDD6E:
+      title: Conclusion
+      base_file: fDD6E.txt
+      order: 1
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

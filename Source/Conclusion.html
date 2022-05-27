@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=354' accesskey='1'>MSV 7,00: Conclusion</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>MSV 7,00: Conclusion<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_354[2645]" value="2645" id="lancheckbox" checked >Tibetan: Kj ’dul ba pa</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_354[2646]" value="2646" id="lancheckbox" checked >Tibetan: Comments</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="354">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="354">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='354'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v354">Search in MSV 7,00: Conclusion</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=354'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=354'>MSV 7,00: Conclusion</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=354" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="41132.Conclusion|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_41132.Conclusion" border=0 hspace=2><a id="href_41132.Conclusion" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=354&mid=632344&level=2&cid=380292" class="ajax_tree0">Conclusion
+</td></tr></table>
+<script language=javascript>test('41132.Conclusion|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=354&amp;mid=632344&amp;level=2">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=354&amp;cid=380292&amp;mid=632344&amp;level=2">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=354&amp;cid=380292&amp;mid=632344&amp;level=2">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Tibetan'><div class='kilderef' id='3041214'></div><div class='clear'></div><span id='3041214bi' class='paragraph'>
+							[Conclusion]<br />(310a6) btsun pa ’dul ba’i lus gaṅ lags | (7) dmigs pa gaṅ lags | byin gyis brlabs pa gaṅ lags ||&nbsp;</span><span id='3041215bi' class='paragraph'>
+						 mtshan ñid gaṅ lags | gleṅ gźi gaṅ lags | ṅo bo ñid gaṅ lags | ’bras bu gaṅ lags | u pā li ’dul ba’i lus ni dmigs pa’o ||&nbsp;</span><span id='3041216bi' class='paragraph'>
+						 dmigs pa ni nan tan no || byin gyis brlab (310b1) pa ni lus daṅ ṅag daṅ yid do || mtshan ñid ni las so ||&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><div class='kilderef' id='3041233'></div><div class='clear'></div><span id='3041233bi' class='paragraph'>
+							.&nbsp;</span><span id='3041234bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041235bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041217bi' class='paragraph'>
+							gleṅ gźi ni bsgrags ba’o || ṅo bo ñid ni ñes pa’o || ’bras bu ni mtho ris daṅ thar ba’o || ’dul ba gźuṅ dam pa rdzogs te || u pā lis kun dris pa rdzogs so || || thams cad mkhyen pa (2) la phyag ’tshal lo ||&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041236bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041218bi' class='paragraph'>
+							’dul ba gźuṅ ni dam pa ’di || ’phags pa ñe ba ’khor gyis ni ||<br />ma ’oṅs pa yayi gaṅ zag gi || ma rtogs pa sogs bsal ba’i phyir ||&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041237bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041219bi' class='paragraph'>
+							gźi daṅ rnam ’byed la sogs kyi || ’grel bśad ṅes pa don gyi lud ||<br />źus nas rgyal (3) bas bka’ stsal to || de dag rnams kyaṅ gaṅ źe na ||&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041238bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041220bi' class='paragraph'>
+							spyi’i sdom la |<br />źu ba ’dul byed gcig las ’phros ||lṅa tshan bcu drug tshan daṅ ni ||<br/ >gleṅ gźi rkyaṅ pa gtam gyi gźi ||<br/ >ma na pi ka ma mo daṅ ||<br/ >lus sogs ston pa tha ma ste ||<br/ >le’u dag tu (4) yaṅ dag ’doṅ ||<br/ >thog mar źus ba de yaṅ ni ||<br/ >rnam ’byed ltuṅ ba sde bźi daṅ ||<br/ >raṅ byuṅ la sogs gźi rnams kyi ||<br/ >gtan la ’bebs pa dag tu ’dod ||<br/ >de ñid dris lan źes kyaṅ bsgrags ||<br/ >de nas ’dul byed dag yin te ||<br/ >pham pa bźi daṅ lhag (5) ma yi ||<br/ >smyan gyi ltuṅ ba yan chad dag ||<br/ >gtan la ’bebs par byed pa yin ||<br/ >de nas gcig las ’phros pa ste ||<br/ >gcig nas bcu yi bar du yin ||<br/ >gcig las ’dzegs pa źes kyaṅ bsgrags ||<br/ >de nas ’dul ba lṅa tshan te ||<br/ >lṅa lṅa ston phyir lṅa tshan no ||<br/ >bcu (6) drug sde tshan ston pa’i phyir ||<br/ >de nas ’dul ba bcu drug tshan ||<br/ >gleṅ gźi la ni sgo lṅa las ||<br/ >daṅ po bźi la sdom gyi ni ||<br/ >tshig bcad bcu bcu’i lṅa pa la ||<br/ >sdom gyi tshig bcad drug yod de ||<br/ >gleṅ gźi dag la brten pa’i phyir ||<br/ >gleṅ gźi źes ni gtags pa yin ||<br/ >(7) byaṅ bsgo bźi re re yaṅ ||<br/ >tshigs bcad bcu bcu’o de ñid la ||<br/ >sil bu źes bya bslab pa’i gźi ||<br/ >rigs mi mthun pa phra mo rnams ||<br/ >ston phyir don daṅ ldan pa yin ||<br/ >’dul ba gtam gyi dṅos po ni ||<br/ >ldebs kyi tshul du byuṅ ba ste ||<br/ >sdom gyi tshig gis bsdus (311a1) pa med ||<br/ >mū la źes pa’i sgra yi don ||<br/ >gźi daṅ rtsa ba dṅos po la’aṅ ||<br/ >’jug phyir gtam gyi gźir yaṅ ’gyur ||<br/ >ma na pi ka’i sgo daṅ po ||<br/ >tshigs bcad bcu yin gñis pa la ||<br/ >tshigs bcad bcu daṅ lhag tsam yod ||<br/ >śin tu phra źiṅ (2) che bas na ||<br/ >bram ze’i bu mo lta bu źes ||<br/ >don daṅ mthun pa’i mtshan yin no ||<br/ >’dul ba ma mo lta bu la ||<br/ >bsñen par rdzogs pa’i phuṅ po daṅ ||<br/ >rab tu ldan daṅ bya ba yi ||<br/ >phuṅ po gsum du śes par bya ||<br/ >ma daṅ ’dra phyir ma mo’o ||<br/ >lus daṅ dmigs pa byin (3) brlab daṅ ||<br/ >mtshan ñid gleṅ gźi ṅo bo daṅ ||<br/ >’bras bu’i don rnams tha ma ste ||<br/ >u pā li yis źus pa ni ||<br/ >de dag rnams kyis rdzogs par yin ||<br/ >mtshan gyi graṅs kyi rim pa daṅ ||<br/ >mtshan gyi bśad pa de yin pas ||<br/ >de ltar bsṅogs nas blta bar bya ||&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041239bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041221bi' class='paragraph'>
+							(4) de ltar na gźuṅ dam pa’i brjod bya don gyi lus ni de dag ñid yin la | rjod byed gźuṅ gi lus ni źu ba ma rdzogs par la ’grel par | ’phags pa ñe bar ’khor gyis źus pa’i gźuṅ rgya gar yul pa yaṅ śa lo ka ñis stoṅ tsam gyi tshad cig la lan spyod pa kho na’o (5) źes yul kha cig na źu ba ma rdzogs pa la śa lo ka ñis stoṅ las med pa’aṅ bśad mod kyi | bod du ’gyur ba’i źu ba ma rdzogs pa la śa lo ka sum stoṅ drug brgya ste bam po bcu gñis daṅ | źu ba rdzogs pa la śa lo ka khri lṅa stoṅ dgu brgya ste | bam po lṅa bcu (6) rtsa gsum yod pas spyir bsdoms na śa lo ka khri dgu stoṅ lṅa brgya ste | bam po drug bcu rtsa lṅa yod do || ||&nbsp;</span><span id='3041222bi' class='paragraph'>
+						 bsod nams chen po’i dpal gyis phyogs las rnam par rgyal ba stobs kyi ’khor los sgyur ba’i rgyal po daṅ mtshuṅs pa rgyal po chen po’i bla’i mchod (7) gnas bde bar gśegs pa’i gźuṅ lugs maṅ du thos pa | rig pa daṅ grol ba’i spobs pa dge ba can | luṅ daṅ rigs pa’i dbaṅ phyug | gaṅs can gyi rgyud kyi mkhas pa chen po ||&nbsp;</span><span id='3041223bi' class='paragraph'>
+						 sdom brtson dam pa śākya ’i dge sloṅ ’jam pa’i dbyaṅs kyis | bka’ ’gyur legs (311b1) par bźeṅs pa rnams las ’di dag ni mkhan po chen po mchi mas kyis dge ba’i bśes gñen rgya ’dul ba ’dzin pa źal bźugs pa’i dus na | dge ba’i bśes gñen ’dul ba ’dzin pa źiṅ mo che ba byaṅ chub seṅ ges gñer mdzad nas | luṅ phran tshegs kyi bam (2) po bcu gñis ma tshaṅ ba daṅ | gźuṅ bla ma’i źu ba ma rdzogs pa bam po bcu gñis daṅ | sdom tshig yig tshar gñis ma tshaṅ ba rnams bsam yas mchims phu la sogs pa dbus gtsaṅ gi gtsug lag khaṅ rnams nas btsal te | la stod ’ol rgod kyi gtsug (3) lag khaṅ du gnas brtan d+harmā seṅ ges luṅ sde bźi tshaṅ bar bźeṅs pa snar thaṅ gi gtsug lag khaṅ du gdan draṅs te | de la dpe phyi mdzad nas bźeṅs pa daṅ | gźan yaṅ chu mig riṅ mo’i gtsug lag khaṅ daṅ | rluṅ kluṅ śod grog gi gtsug lag khaṅ gi ’dul (4) ba luṅ la sogs pa rnams la gtugs te sṅa źus legs par bgyis nas bźeṅs pa saṅs rgyas kyi bstan pa’i rtsa ba legs par gsuṅs pa dam pa’i chos ’dul ba luṅ sde bźi’o ||&nbsp;</span><span id='3041224bi' class='paragraph'>
+						 de’i bka’ ’gyur gyi dpe phyi rnam par dag pa rnams | mkhas (5) pa’i ’byuṅ gnas dpal snar thaṅ gi gtsug lag khaṅ nas gdan draṅs te | ’phags pa ’jig rten dbaṅ phyug gi sprul pa’i sku chos rgyal sroṅabatsana sgam po’i naṅ blon chen po mgar stoṅ btsan yul zuṅs kyi rgyud pa | gtsug lag gñis kyi mdzad pas (6) bstan pa rin po che’i źabs tog la g-yel ba mi mṅa’ źiṅ | ’gro ba maṅ po’i mgon skyabs dam par gyur pa dpal ldan rgyal ba’i sde yis | ’gro ba ma lus pa’i gnas skabs daṅ | mthar thug gi phan bde ma lus pa’i ’byuṅ gnas rgyal (7) ba’i bstan pa rin po che yun riṅ du gnas śiṅ | phyogs kun tu dar źiṅ rgyas par bya ba’i phyir ||&nbsp;</span><span id='3041225bi' class='paragraph'>
+						 bod khams su smon lam gyi stobs can mṅa’ bdag lha btsan po byaṅ chub sems dpa’ rnams daṅ | lo paṇa skyes mchog khyad par can rnams kyi bdag (312a1) rkyen la brten nas | bde bar gśegs pa’i gsuṅ rab thog mtha’ bar du dge źiṅ sgro skur gyi mtha’ daṅ bral la gźuṅ lugs ṅan pa’i dri mas dben pa mdo sde daṅ | rgyud sde’i phyogs sṅa phyir bod du ’gyur ro cog rnams mi’i dbaṅ po thog na (2) the mur gyi riṅ la | ti śri kun dga’ rgyal mtshan dpal bzaṅ po bstan pa skyoṅ ba’i dus | rgyal ba’i bstan pa lṅa brgya bdun pa’i mthar ñe ba | ’gro ba’i bla ma ston pa gdul bya’i dor źi bar gśegs pa’i tshul bstan nas | lo sum stoṅ bźi brgya (3) brgyad bcu ’das pa me mo phag gi lo gsar gyi zla ba tshes graṅs gza’ skar bzaṅ po la dbu btsugs te | rgyal ba’i sras po rig pa ’dzin pa byaṅ chub dpal ldan gyis | bstan pa la śes nas mi phyed pa’i dad pa brtan pos kun nas bslaṅ nas źal ta’i rim pa rnams daṅ | (4) rgyu’i dṅos po bzaṅ źiṅ maṅ la kha na ma tho ba med pas mthun pa’i rkyen bsgrubs nas | bstan pa’i ’byuṅ gnas dpal na len dra daṅ mtshuṅs pa sbrul pa’i rgyal po se chen gan gyi dgos kyi lha khaṅ dpal guṅ thaṅ gi gtsug lag khag chen por legs par bźeṅs te | sde snod kyi (5) tshul la cuṅ zad blo kha phyogs pa thaṅ po che ba’i btsun pa kun dga’ ’bum gyis kha ta daṅ | źus dag gi daṅ dos pa bgyis śiṅ | gźan yaṅ dad pa daṅ brtson ’grus che źiṅ blo gros gsal ba’i sdom brtson dam pa maṅ du thos śiṅ sde snod ’dzin pa mkhas pa rnams kyis | (6) rgya gar skad la sogs pa legs par sbyar ba’i skad sor bźag rnams ni sṅon gyi lots+tsha ba chen po rnams kyis mdzad pa’i bye brag tu rtogs byed chen po daṅ | sgra sbyor bam po gñis pa la sogs pa la brten nas dag par byas śiṅ | bod skad rnams ni yul skad daṅ | ’phral (7) skad ṅan pa rnams daṅ ma ’dres par bod yul gyi sṅon gyi brda mes mkhan po rnams daṅ | sgyur byed dam pa sṅa phyir byon pa rnams kyi brda gsar rñiṅ daṅ | skad gsar bcad la sogs pa’i rjes su ’braṅs nas da phrag daṅ | ma mya daṅ | sa stsogs la sogs pa yod med (312b1) rnams mkhas pa rnams kyis ji ltar mdzad pa ltar brda don ma nor bar dag par bgyis nas | gźi duṅ gis gźi ltar dkar ’jam mkhregs pa lho rgyal po lha khaṅ gi śo gu la | dam che źiṅ mdaṅs gsal ba ut+pala sṅon po lta bu rgya nag chen po las ’oṅs pa’i snag (2) tshas | ’bur dkyus tshugs gsum la mkhas pa’i mthar phyin pas yi ge’i rig byed la slob dpon gyi go ’phaṅ thob pas dag sñoms mdzes pas bźeṅs pa dpon dpal bzaṅ rin chen daṅ | saṅs rgyas grags la sogs pa dbus gtsaṅ gi yi ge ba yid gźuṅs śiṅ (3) mkhas pa rnams kyis legs par bris pa la źus dag lan gsum du bgyis te bźeṅs pa rnams | sa mo glaṅ gi lo bkra śis lo gsar gyi zla ba legs par grub ciṅ | ’bras bu daṅ bsgrub pa’i dus kyi lṅa brgya phrag drug daṅ | luṅ mṅon pa’i dus kyi (4) bźi brgya brgyad bcu rtsa gñis ’das la | lhag ma mṅon pa’i lo bco brgyad daṅ | mdo sde | ’dul ba | rtags tsam ’dzin pa’i lṅa brgya phrag gsum te | stoṅ lṅa brgya bco brgyad bstan pa’i lhag mar yod pa’i dus su bka’ ’gyur legs par grub pa (5) rnams las ’di dag ni luṅ sde bźi’o ||&nbsp;</span><span id='3041226bi' class='paragraph'>
+						 ’dul ba luṅ phal che ba la dge sloṅ pha ma’i so sor thar pa daṅ | źu ba ma rdzogs pa bźeṅs pa med mod kyi ’on kyaṅ so sor thar pa gñis rnam ’byed gñis kyi rtsa ba yin źiṅ | rnam ’byed gñis ni so sor thar pa rnam (6) pa gñis kyi ’grel ba yin la ||&nbsp;</span><span id='3041227bi' class='paragraph'>
+						 źub ma rdzogs pa ni źu ba dag śos yin pa’i phyir luṅ rnam ’byed so so’i dbu daṅ | gźuṅ bla ma ma rdzogs pa dbu ñid du bźeṅs so ||&nbsp;</span><span id='3041228bi' class='paragraph'>
+						 luṅ sde bźi’i go rims ni gźi daṅ | rnam par ’byed pa daṅ | de dag gi dka’ (7) ba’i gnas źus lan gyis gtan la ’bebs pa gźuṅ bla ma daṅ | de dag tu ma tshaṅ pa kha skoṅ ba phran tshegs so ||&nbsp;</span><span id='3041229bi' class='paragraph'>
+						 don gyi go rims de ltar yin yaṅ khams pa rnams kyis gźi daṅ | rnam par ’byed pa’i rjes la phran tshegs daṅ | de’i rjes la gźuṅ dam pa ñid (313a1) bris śiṅ | ka cog la sogs pas mdzad pa’i mtshan byaṅ dkar chag las kyaṅ rim pa de kho na ltar ’byuṅ bas ’dir yaṅ gźuṅ dam pa mjug ñid du bris so ||&nbsp;</span><span id='3041230bi' class='paragraph'>
+						 ’di rnams kyi bam po’i graṅs ni śwo lo ka sum brgya la bam po rer byas nas (2) luṅ gźi la bam po brgya daṅ dgu | dge sloṅ pha’i rnam ’byed la bam po brgyad bcu rtsa gsum daṅ bam po sum cha | dge sloṅ ma’i rnam ’byed la bam po ñi śu rtsa brgyad | phran tshegs la bam po lṅa bcu rtsa dgu | gźuṅ bla ma’i źu ba ma rdzogs pa la bam po bcu (3) gñis | źu ba rdzogs pa’i gźuṅ dam pa la bam po lṅa bcu rtsa gsum ste | bsdoms na gźuṅ dam pa la bam po drug bcu rtsa lṅa yod pas sbyir luṅ sde bźi chad pa la bam po sum brgya bźi bcu rtsa bźi daṅ bam po sum cha yod do ||&nbsp;</span><span id='3041231bi' class='paragraph'>
+						 sṅar ma tshaṅ ba rnams (4) dag par bźeṅs pa’i tshul ni phran tshegs daṅ | źu ba ma rdzogs pa’i mjug dag tu bris zin pa’i phyir de dag tu blta bar bya’o || ||&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041240bi' class='paragraph'>
+							.&nbsp;</span><span id='3041241bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041242bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041243bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041244bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041245bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041246bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041247bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041248bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041249bi' class='paragraph'>
+						 .&nbsp;</span><span id='3041250bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041232bi' class='paragraph'>
+							ye d+harmā he tu pra b+ha bā he dun te śān+ta thā ga to h+ya ba data | teśāñ+tsa yo ni ro d+ha (5) a ba~M bā da ma hā śra ma ṇa || ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3041214";
+							kilderef = "Conc Kj ’dul ba pa  - Kj ’dul ba pa 313a4-5";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3041251bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3041233";
+							kilderef = "Conc Comments  - Comments ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'></div><div class='textvar' style='width:49%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=fd1b3192-e6a4-11e3-942f-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
